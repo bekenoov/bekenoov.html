@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Абай Құнанбайұлы</title>
+
+  <!-- CSS Безендіру -->
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+    }
+
+    nav {
+      background-color: #0059b3;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    h1 {
+      color: darkblue;
+    }
+
+    img {
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 60%;
+    }
+
+    table, th, td {
+      border: 1px solid #666;
+    }
+
+    th, td {
+      padding: 10px;
+    }
+
+    th {
+      background-color: #e0e0e0;
+    }
+
+    ul {
+      text-align: left;
+      display: inline-block;
+    }
+
+    form {
+      background-color: #e6f2ff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      margin: 20px auto;
+      box-shadow: 0 0 10px #aaa;
+    }
+
+    input, textarea {
+      width: 90%;
+      margin: 5px 0;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #999;
+    }
+
+    input[type="submit"] {
+      background-color: #003366;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0059b3;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Тақырып -->
+  <header>
+    <h1>Абай Құнанбайұлы — Ұлы Қазақ Ақыны</h1>
+  </header>
+
+  <!-- Навигация -->
+  <nav>
+    <a href="#abai">Абай туралы</a> |
+    <a href="#works">Шығармалары</a> |
+    <a href="#video">Бейне</a> |
+    <a href="#table">Кесте</a> |
+    <a href="#form">Пікір қалдыру</a>
+  </nav>
+
+  <!-- Абай туралы бөлім -->
+  <section id="abai">
+    <h2>Абай өмірбаяны</h2>
+    <p>
+      Абай Құнанбайұлы (1845–1904) — қазақтың ұлы ақыны, ойшылы, философы және ағартушысы. 
+      Ол қазақ жазба әдебиетінің негізін қалап, халықты білім мен мәдениетке шақырды.
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Abai_Kunanbaev.jpg" 
+         alt="Абай Құнанбайұлы" width="250">
+  </section>
+
+  <!-- Шығармалары -->
+  <section id="works">
+    <h2>Абайдың шығармалары</h2>
+    <ul>
+      <li>«Қара сөздер» — философиялық және тәрбиелік мәні бар еңбегі.</li>
+      <li>Аудармалар: Пушкин, Лермонтов, Крылов шығармалары.</li>
+      <li>Әндері: «Көзімнің қарасы», «Желсіз түнде жарық ай» және т.б.</li>
+    </ul>
+  </section>
+
+  <!-- YouTube бейне -->
+  <section id="video">
+    <h2>Абай туралы бейне</h2>
+    <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/ZcQW4cFg3as" 
+            title="Абай туралы бейне" 
+            frameborder="0" 
+            allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- Кесте -->
+  <section id="table">
+    <h2>Абай өмірінің негізгі кезеңдері</h2>
+    <table>
+      <tr>
+        <th>Жылы</th>
+        <th>Оқиға</th>
+      </tr>
+      <tr>
+        <td>1845</td>
+        <td>Абайдың туған жылы</td>
+      </tr>
+      <tr>
+        <td>1880–1890</td>
+        <td>Абайдың шығармашылық өрлеу кезеңі</td>
+      </tr>
+      <tr>
+        <td>1904</td>
+        <td>Абайдың қайтыс болған жылы</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Пікір формасы -->
+  <section id="form">
+    <h2>Пікір қалдыру</h2>
+    <form>
+      <label>Атыңыз:</label><br>
+      <input type="text" name="name" placeholder="Атыңызды жазыңыз"><br><br>
+      
+      <label>Пікіріңіз:</label><br>
+      <textarea rows="4" cols="30" placeholder="Пікіріңізді осында жазыңыз"></textarea><br><br>
+      
+      <input type="submit" value="Жіберу">
+    </form>
+  </section>
+
+  <!-- JavaScript мысалы -->
+  <section>
+    <button onclick="alert('Сәлем! Бұл сайтты ұнаттың ба? 🙂')">Батырманы бас!</button>
+  </section>
+
+  <!-- Төменгі бөлік -->
+  <footer>
+    <p>Автор: <strong>Мен</strong> | 2025 жыл</p>
+  </footer>
+</body>
+</html>
